@@ -15,10 +15,48 @@ public class Account {
     private String id;
     private String name;
     private double money;
+    private static int accountsNum = 0;
 
-    public Account(String n){
-        id = n;
-        name = n;
-        money=0;
+
+    public Account(String name) {
+        this.accountsNum++;
+        this.id = accountsNum + "" + name.charAt(0) + "BANK";
+        this.name = name;
+        this.money = 0;
+    }
+
+    public Account(String n, double m) {
+        this(n);
+        this.money = m;
+    }
+
+    void withdraw(double money) {
+        this.money -= money;
+    }
+
+    void deposit(double m) {
+        this.money += m;
+    }
+
+    public static int getAccountsNum() {
+        return accountsNum;
+    }
+
+    public void setName(String n) {
+        if (!(n == null || n.trim().isEmpty()))
+            name = n.toLowerCase().trim();
+    }
+
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getMoney() {
+        return money;
     }
 }
