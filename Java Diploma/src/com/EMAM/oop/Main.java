@@ -22,17 +22,27 @@ public class Main {
 //        System.out.println(s1.age);
 
 //        Encapsulation
-        Account a1 = new Account("Ahmed");
-        System.out.println(a1.getId());
-        Account a2 = new Account("Ahmed");
-        System.out.println(a2.getId());
-        Account a3 = new Account("Ahmed");
-        System.out.println(a3.getId());
-        Account[] accounts = new Account[3];
+//        Account a1 = new Account("Ahmed");
+//        System.out.println(a1.getId());
+//        Account a2 = new Account("Ahmed");
+//        System.out.println(a2.getId());
+//        Account a3 = new Account("Ahmed");
+//        System.out.println(a3.getId());
+//        Account[] accounts = new Account[3];
+//
+//        accounts[0] = a1;
+//        accounts[1] = a2;
+//        accounts[2] = a3;
 
-        accounts[0] = a1;
-        accounts[1] = a2;
-        accounts[2] = a3;
+//        Composition / has a
+        Person f = new Person("ahmed");
+        Person m = new Person("aya");
+        Family myFamily = new Family(f,m);
+        myFamily.addSon(new Person("Ali"));
+        System.out.println(myFamily.getFather().getFirstName());
+        System.out.println(myFamily.getMother().getFirstName());
+        System.out.println(myFamily.getSons()[0].getFirstName());
+
     }
 
 }
