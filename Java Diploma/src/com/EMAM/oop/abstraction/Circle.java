@@ -6,7 +6,22 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.EMAM.oop.inheretance;
+package com.EMAM.oop.abstraction;
 
-public class Main {
+public class Circle implements circumferenceCalculable,areaCalculable {
+    double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI*radius*radius;
+    }
+
+    @Override
+    public double getCircumference() {
+        return 2*Math.PI*radius;
+    }
 }

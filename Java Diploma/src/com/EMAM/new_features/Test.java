@@ -13,11 +13,25 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
 //        jshell, var, text box,switch statement
-        int num = 0;
+
+        System.out.println("""
+                info
+                    name: mohamed
+                    age:  23""");
+
+        var x = 1.5;
+        var y = x;
         var in = new Scanner(System.in);
-        String s = switch (num){
-            case 0,1,2,3,6 -> "work";
-            default -> "holiday";
+
+        int num = 0;
+        String s = "";
+        s = switch (num) {
+            case 0, 1, 2, 3, 4 -> {
+                yield "work";
+            }
+
+            case 5, 6 -> "holiday";
+            default -> "error";
         };
         System.out.println(s);
     }

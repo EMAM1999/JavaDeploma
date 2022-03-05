@@ -6,7 +6,9 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.EMAM.oop.inheretance;
+package com.EMAM.oop.abstraction;
 
-public class Main {
+
+public interface areaCalculable {
+    public double getArea();
 }

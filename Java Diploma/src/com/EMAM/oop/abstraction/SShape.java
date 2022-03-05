@@ -6,7 +6,20 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.EMAM.oop.inheretance;
+package com.EMAM.oop.abstraction;
 
-public class Main {
+public abstract class SShape implements circumferenceCalculable,areaCalculable {
+    private int sides;
+
+
+    public SShape(int sides) {
+        this.sides = sides;
+    }
+
+    public int getSides() {
+        return sides;
+    }
+
+
+
 }

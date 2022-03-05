@@ -6,7 +6,7 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.EMAM.oop.inheretance;
+package com.EMAM.oop.generic;
 
-public class Main {
+public class TestGeneric {
 }

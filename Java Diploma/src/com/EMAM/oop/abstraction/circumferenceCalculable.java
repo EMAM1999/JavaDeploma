@@ -6,7 +6,8 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.EMAM.oop.inheretance;
+package com.EMAM.oop.abstraction;
 
-public class Main {
+public interface circumferenceCalculable {
+     public double getCircumference();
 }

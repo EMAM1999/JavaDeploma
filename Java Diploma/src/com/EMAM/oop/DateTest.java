@@ -19,7 +19,8 @@ public class DateTest {
 //     122  1  13
 
     public static void main(String[] args) {
-        LocalDateTime dateTime = LocalDateTime.now().minusDays(10).minusMonths(1).minusYears(1999);
+        LocalDateTime dateTime = LocalDateTime.now();
+        dateTime.minusDays(10).minusMonths(1).minusYears(1999);
 
 //        y-m-d
         System.out.println(dateTime.getDayOfMonth() + "-" +

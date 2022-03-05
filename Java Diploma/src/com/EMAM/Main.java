@@ -6,7 +6,24 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.EMAM.oop.inheretance;
+package com.EMAM;
 
 public class Main {
+      volatile static public int n=0;
+
+    public Main() {
+        n++;
+    }
+
+    public static void main(String[] args) {
+        new Main();
+        new Main();
+        new Main();
+        new Main();
+        System.out.println(Main.n);
+    }
+
+    static int sum(int... n){
+        return 1;
+    }
 }

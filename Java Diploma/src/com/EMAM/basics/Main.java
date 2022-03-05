@@ -10,7 +10,29 @@ package com.EMAM.basics;
 
 import com.EMAM.oop.Account;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        int base = input("Enter the base");
+        int power = input("Enter the power");
+        int res = power(base, power);
+        System.out.println(res);
     }
+
+     static int input(String s) {
+        Scanner in = new Scanner(System.in);
+        System.out.println(s);
+        return in.nextInt();
+    }
+
+    static int power(int base, int power) {
+        int res = 1;
+        for (int i = 0; i < power; i++) {
+            res *= base;
+        }
+        return res;
+    }
+
+
 }

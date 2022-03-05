@@ -6,7 +6,26 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.EMAM.oop.inheretance;
+package com.EMAM.oop.abstraction;
 
-public class Main {
+public class Square extends SShape{
+    double length;
+
+    public Square(double length) {
+        super(4);
+        this.length = length;
+    }
+
+
+    @Override
+    public double getCircumference() {
+        return length*4;
+    }
+
+    @Override
+    public double getArea() {
+        return length*length;
+    }
+
+
 }
