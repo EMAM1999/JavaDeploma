@@ -15,7 +15,7 @@ public class Randoms {
     // 4. ميثود بتاخد العينة وبتحسب نسبة اختيار نفس العنصر مرتين ورا بعض
     public static void main(String[] args) {
         // [0, 1[ -> [0, 6[ -> [5, 11[ -> {5, 6, 7, 8, 9, 10}
-        System.out.println(probability(6, 2, 1, 2, 3, 4, 5, 6));
+//        System.out.println(probability(6, 2, 1, 2, 3, 4, 5, 6));
     }
 
     //    {0,0,1}  n^c   (count^c)/n^c
